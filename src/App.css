@@ -1,38 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+:root {
+  --secundary-text: #61dafb;
+  --primary-text: rgb(36 82 110 / 67%);
+  --font-family: 'Roboto Slab', serif;
+
+}
+
+#root {
+  padding: 3rem;
+  font-family: var(--font-family);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
-  color: #61dafb;
+  color: var(--secundary-text);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box2 {
+  /* width: 90%; */
+  border:var(--secundary-text);
+}
+
+h1 {
+  color: var(--primary-text);
+  font-weight: bold;
+}
+
+.sc-bjUoiL{
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.form-inline {
+  display: flex;
+  gap: 1rem;
+}
+
+.sc-dkzDqf {
+  font-size: 1.2rem;
+  color: var(--secundary-text);
+}
+
+.sc-jqUVSM {
+  font-size: 1rem;
+}
+
+.fwKvpK{
+  font-size: 2rem;
+  color: var(--primary-text);
 }
