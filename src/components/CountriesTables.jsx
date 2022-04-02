@@ -1,8 +1,6 @@
 import React from 'react'
 import DataTable from 'react-data-table-component'
-// import Export from 'react-data-table-component'
 import { useEffect, useState } from 'react';
-// import { CSVDownload} from "react-csv";
 import getEpisodios from '../constante/episodios.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -49,12 +47,9 @@ function EpisodesTables() {
     getEpisodios().then((data) => {
       setEpisodes(data.results)
       const result = data.results.map((episode) => (
-    
         {...episode,timeDisponible :(episode.air_date.split(",")[1])-(episode.created.split("-")[0])}
       )) 
       setFilterTimeDiponible(result)
-      console.log(result)
-      // setFilterTimeDiponible(data.results)
     })
   },[])
   

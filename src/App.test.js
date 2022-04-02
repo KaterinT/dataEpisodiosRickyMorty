@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+// describe('Lectura de API "Ricky y Morty"', () => {
+//   it("deberia mostrar una lista de caracteres incluido Pilot ",() => {
+//     render(<App />);
+//     const linkElement = screen.getByText("Pilot");
+//     expect(linkElement).toBeInTheDocument();
+//   })
+// });
